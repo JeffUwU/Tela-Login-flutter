@@ -5,6 +5,8 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
+  get backgroundColor => null;
 
   @override
   Widget build(BuildContext context){
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'Tela de Login',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: backgroundColor,
       ),
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   } 
 }
